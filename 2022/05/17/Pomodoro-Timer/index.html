@@ -6,28 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     
-    <title>Pomodoro Timer | Hexo</title>
+    <title>Pomodoro Timer | Patrick Hutson</title>
 
-    <meta name="description" content="Hexo">
-    <meta name="keywords" content="">
+    <meta name="description" content="My projects and works I&#39;ve done uploaded to a small site to showcase. A portfolio of sorts.">
+    <meta name="keywords" content="programming, software, java, C, cpp">
 
     
 
     <meta property="og:locale" content="en" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content= "Pomodoro Timer | Hexo"  />
-    <meta property="og:description" content= "Hexo" />
+    <meta property="og:title" content= "Pomodoro Timer | Patrick Hutson"  />
+    <meta property="og:description" content= "My projects and works I&#39;ve done uploaded to a small site to showcase. A portfolio of sorts." />
     <meta property="og:url" content="http://pugroll.github.io/2022/05/17/Pomodoro-Timer/index.html" />
     <meta property="og:site_name" content="" />
-    <meta property="article:author" content="John Doe" />
+    <meta property="article:author" content="Patrick Hutson" />
     <meta property="article:publisher" content="" />
-    <meta property="og:description" content="Hexo" />
-    <meta name="twitter:title" content="Pomodoro Timer | Hexo"/>
-    <meta name="twitter:description" content="Hexo"/>
+    <meta property="og:description" content="My projects and works I&#39;ve done uploaded to a small site to showcase. A portfolio of sorts." />
+    <meta name="twitter:title" content="Pomodoro Timer | Patrick Hutson"/>
+    <meta name="twitter:description" content="My projects and works I&#39;ve done uploaded to a small site to showcase. A portfolio of sorts."/>
     <script type="application/ld+json">
         {
-            "description": "Hexo",
-            "author": { "@type": "Person", "name": "John Doe" },
+            "description": "My projects and works I&#39;ve done uploaded to a small site to showcase. A portfolio of sorts.",
+            "author": { "@type": "Person", "name": "Patrick Hutson" },
             "@type": "BlogPosting",
             "url": "http://pugroll.github.io/2022/05/17/Pomodoro-Timer/index.html",
             "publisher": {
@@ -36,10 +36,10 @@
                 "@type": "ImageObject",
                 "url": "http://pugroll.github.ioundefined"
             },
-            "name": "John Doe"
+            "name": "Patrick Hutson"
             },
-            "headline": "Pomodoro Timer | Hexo",
-            "datePublished": "2022-05-17T19:55:14.000Z",
+            "headline": "Pomodoro Timer | Patrick Hutson",
+            "datePublished": "2022-05-17T20:08:36.000Z",
             "mainEntityOfPage": {
                 "@type": "WebPage",
                 "@id": "http://pugroll.github.io/2022/05/17/Pomodoro-Timer/index.html"
@@ -95,7 +95,7 @@
             
             <div class="header-type-inner">
                 
-                    <a class="header-type-title" href="/">Hexo</a>
+                    <a class="header-type-title" href="/">Patrick Hutson</a>
                 
     
                 
@@ -164,11 +164,15 @@
         <div class="article-more-info article-more-info-post hairline">
 
             <div class="article-date">
-  <time datetime="2022-05-17T19:55:14.000Z" itemprop="datePublished">2022-05-17</time>
+  <time datetime="2022-05-17T20:08:36.000Z" itemprop="datePublished">2022-05-17</time>
 </div>
 
             
 
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li></ul>
+            </div>
             
 
             
@@ -186,16 +190,30 @@
 <li>Use the AWT to create a small window to handle the the buttons and labels.<br>Otherwise I wasn’t too concerned for background colors or added functionality.</li>
 </ol>
 <h3 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1:"></a>Step 1:</h3><p><strong>Creating a window</strong><br>First things first, we need to create a with which all the logic will be placed: this can simply be done by:</p>
+<details>
+    <summary> Step 1 code example </summary>
+
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.awt.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Pomodoro</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">		<span class="comment">//Initialize the frame</span></span><br><span class="line">        <span class="type">Frame</span> <span class="variable">f</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Frame</span>();</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="comment">//Handle Setting up the frame;</span></span><br><span class="line">        f.setSize(<span class="number">400</span>,<span class="number">300</span>); <span class="comment">//Bounds for the window or frame</span></span><br><span class="line"></span><br><span class="line">        f.setTitle(<span class="string">&quot;Pomodoro Timer&quot;</span>); <span class="comment">//Window title</span></span><br><span class="line"></span><br><span class="line">        f.setLayout(<span class="literal">null</span>); <span class="comment">//We are not using a layout for this project</span></span><br><span class="line">        f.setVisible(<span class="literal">true</span>);  <span class="comment">//Visibility set to true, so we can see the frame</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><br>And here’s what the window should look like:<br></p>
-<p>![[pomodoroTimerProject_Step1_051022.png]]</p>
-<h3 id="Step-2-Adding-Labels-and-buttons"><a href="#Step-2-Adding-Labels-and-buttons" class="headerlink" title="Step 2: Adding Labels and buttons"></a>Step 2: Adding Labels and buttons</h3><p>Next let’s add some buttons to the panel, this can be accomplished by using the <em>Button</em> obects and <em>Label</em> object provided by <strong>awt</strong> </p>
+</details>
+
+<p><img src="/photos/pomodoroTimerProject_Step1_051022.png" alt="Blank Window using Java awt"></p>
+<h3 id="Step-2-Adding-Labels-and-buttons"><a href="#Step-2-Adding-Labels-and-buttons" class="headerlink" title="Step 2: Adding Labels and buttons"></a>Step 2: Adding Labels and buttons</h3><p>Next let’s add some buttons to the panel, this can be accomplished by using the <em>Button</em>obects and <em>Label</em> object provided by <strong>awt</strong> </p>
+<details>
+    <summary> Step 2 Code Example </summary>
+
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.awt.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Pomodoro</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">		<span class="comment">//Initialize the frame</span></span><br><span class="line">        <span class="type">Frame</span> <span class="variable">f</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Frame</span>();</span><br><span class="line">    </span><br><span class="line">		<span class="comment">//Labels for the current remaining Time</span></span><br><span class="line"></span><br><span class="line">        <span class="type">Label</span> <span class="variable">currTime</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Label</span>(<span class="string">&quot;Current Time:&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="type">Label</span> <span class="variable">breakTime</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Label</span>(<span class="string">&quot;Break Time:&quot;</span>);</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">        <span class="comment">//Labels representing the time</span></span><br><span class="line"></span><br><span class="line">        <span class="type">Label</span> <span class="variable">currRemainTime</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Label</span>(<span class="string">&quot;25:00&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="type">Label</span> <span class="variable">breakRemainTime</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Label</span>(<span class="string">&quot;5:00&quot;</span>);</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">        <span class="comment">//Buttons</span></span><br><span class="line"></span><br><span class="line">        <span class="type">Button</span> <span class="variable">startButton</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Button</span>(<span class="string">&quot;Start&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="type">Button</span> <span class="variable">breakButton</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Button</span>(<span class="string">&quot;Break&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//Handle Setting up the frame;</span></span><br><span class="line">        f.setSize(<span class="number">400</span>,<span class="number">300</span>); <span class="comment">//Bounds for the window or frame</span></span><br><span class="line"></span><br><span class="line">        f.setTitle(<span class="string">&quot;Pomodoro Timer&quot;</span>); <span class="comment">//Window title</span></span><br><span class="line"></span><br><span class="line">        f.setLayout(<span class="literal">null</span>); <span class="comment">//We are not using a layout for this project</span></span><br><span class="line">        f.setVisible(<span class="literal">true</span>);  <span class="comment">//Visibility set to true, so we can see the frame</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><br>And here’s what it looks like:<br><br>![[pomodoroTimerProject_Step2_051022.png]]</p>
+<p><br>And here’s what it looks like:<br></p>
+</details>
+
+<p><img src="/photos/pomodoroTimerProject_Step2_051022.png" alt="Alt Text"></p>
 <h3 id="Step-3-Getting-the-timers-working"><a href="#Step-3-Getting-the-timers-working" class="headerlink" title="Step 3: Getting the timers working."></a>Step 3: Getting the timers working.</h3><p>After getting we need to  add the logic that will count down the time for each session. For each button, we will add an action listener that waits an amount of milliseconds afterwars it decrements the timer.</p>
 <p>Here’s an example for the startButton, the button for break sessions is similar to this:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">startButton.addActionListener(<span class="keyword">new</span> <span class="title class_">ActionListener</span>()&#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">(<span class="type">int</span> ms)</span> &#123;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">try</span>&#123;</span><br><span class="line"></span><br><span class="line">                    Thread.sleep(ms);</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">catch</span>(InterruptedException ex) &#123;</span><br><span class="line"></span><br><span class="line">                    Thread.currentThread().interrupt();</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="type">int</span> <span class="variable">seconds</span> <span class="operator">=</span> <span class="number">59</span>;</span><br><span class="line"></span><br><span class="line">            <span class="type">int</span> <span class="variable">minutes</span> <span class="operator">=</span> <span class="number">24</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">actionPerformed</span><span class="params">(ActionEvent e)</span> &#123;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">while</span>(running) &#123;      </span><br><span class="line"></span><br><span class="line">                    <span class="keyword">if</span>(seconds == -<span class="number">1</span>)&#123;</span><br><span class="line"></span><br><span class="line">                        minutes--;</span><br><span class="line"></span><br><span class="line">                        seconds = <span class="number">59</span>;</span><br><span class="line"></span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">if</span>(minutes == -<span class="number">1</span>) &#123;</span><br><span class="line"></span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    wait(<span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line">                    currRemainTime.setText(minutes + <span class="string">&quot;:&quot;</span> + seconds);</span><br><span class="line"></span><br><span class="line">                    seconds--;</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
+<details>
+    <summary>Step 3 Code Example</summary>
 
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">startButton.addActionListener(<span class="keyword">new</span> <span class="title class_">ActionListener</span>()&#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">wait</span><span class="params">(<span class="type">int</span> ms)</span> &#123;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">try</span>&#123;</span><br><span class="line"></span><br><span class="line">                    Thread.sleep(ms);</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">catch</span>(InterruptedException ex) &#123;</span><br><span class="line"></span><br><span class="line">                    Thread.currentThread().interrupt();</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="type">int</span> <span class="variable">seconds</span> <span class="operator">=</span> <span class="number">59</span>;</span><br><span class="line"></span><br><span class="line">            <span class="type">int</span> <span class="variable">minutes</span> <span class="operator">=</span> <span class="number">24</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">actionPerformed</span><span class="params">(ActionEvent e)</span> &#123;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">while</span>(running) &#123;      </span><br><span class="line"></span><br><span class="line">                    <span class="keyword">if</span>(seconds == -<span class="number">1</span>)&#123;</span><br><span class="line"></span><br><span class="line">                        minutes--;</span><br><span class="line"></span><br><span class="line">                        seconds = <span class="number">59</span>;</span><br><span class="line"></span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">if</span>(minutes == -<span class="number">1</span>) &#123;</span><br><span class="line"></span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    wait(<span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line">                    currRemainTime.setText(minutes + <span class="string">&quot;:&quot;</span> + seconds);</span><br><span class="line"></span><br><span class="line">                    seconds--;</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
+</details>
 
 <p>That’s it, the quick and dirty pomodoro app is done. It brings up a popup in java, and features the necessary buttons to have a pomodoro session run on the desktop.</p>
 
@@ -216,18 +234,9 @@
     
 <nav class="article-nav">
   
-    <a href="/2022/05/17/pomodoroTimer-Step1-png/" id="article-nav-newer" class="article-nav-link-wrap">
-      <div class="article-nav-caption">prossimo</div>
-      <div class="article-nav-title">
-        
-          pomodoroTimer_Step1.png
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/05/07/aboutMe/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-caption">precedente</div>
+    <a href="/2022/05/07/About-Me/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">上一篇</div>
       <div class="article-nav-title">About Me</div>
     </a>
   
@@ -235,17 +244,17 @@
 
 
     <section class="share">
-        <div class="share-title">share</div>
+        <div class="share-title">分享</div>
         <a class="share-item" target="_blank"
-            href="https://twitter.com/share?text=Pomodoro Timer - Hexo&url=http%3A%2F%2Fpugroll.github.io%2F2022%2F05%2F17%2FPomodoro-Timer%2F">
+            href="https://twitter.com/share?text=Pomodoro Timer - Patrick Hutson&url=http%3A%2F%2Fpugroll.github.io%2F2022%2F05%2F17%2FPomodoro-Timer%2F">
             <box-icon type='logo' name='twitter'></box-icon>
         </a>
         <a class="share-item" target="_blank"
-            href="https://www.facebook.com/sharer.php?title=Pomodoro Timer - Hexo&u=http%3A%2F%2Fpugroll.github.io%2F2022%2F05%2F17%2FPomodoro-Timer%2F">
+            href="https://www.facebook.com/sharer.php?title=Pomodoro Timer - Patrick Hutson&u=http%3A%2F%2Fpugroll.github.io%2F2022%2F05%2F17%2FPomodoro-Timer%2F">
             <box-icon name='facebook-square' type='logo' ></box-icon>
         </a>
         <!-- <a class="share-item" target="_blank"
-            href="https://service.weibo.com/share/share.php?title=Pomodoro Timer - Hexo&url=http://pugroll.github.io/2022/05/17/Pomodoro-Timer/&pic=">
+            href="https://service.weibo.com/share/share.php?title=Pomodoro Timer - Patrick Hutson&url=http://pugroll.github.io/2022/05/17/Pomodoro-Timer/&pic=">
             <div class="n-icon n-icon-weibo"></div>
         </a> -->
     </section>
@@ -290,6 +299,13 @@
 
     
       
+  <div class="widget-wrap widget-tags">
+    <div class="widget-title"><span>Tags</span></div>
+    <div class="widget-inner">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li></ul>
+    </div>
+  </div>
+
 
     
       
@@ -299,19 +315,11 @@
       <ul>
         
           <li>
-            <a href="/2022/05/17/pomodoroTimer-Step2-png/">pomodoroTimer_Step2.png</a>
-          </li>
-        
-          <li>
-            <a href="/2022/05/17/pomodoroTimer-Step1-png/">pomodoroTimer_Step1.png</a>
-          </li>
-        
-          <li>
             <a href="/2022/05/17/Pomodoro-Timer/">Pomodoro Timer</a>
           </li>
         
           <li>
-            <a href="/2022/05/07/aboutMe/">About Me</a>
+            <a href="/2022/05/07/About-Me/">About Me</a>
           </li>
         
       </ul>
@@ -346,7 +354,7 @@
     <!-- 开源不易，请勿删除 -->
     <div class="footer-wrap">
         <div class="footer-inner"> 
-            Hexo &copy; 2022<br>
+            Patrick Hutson &copy; 2022<br>
             Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
         </div>
     </div>
